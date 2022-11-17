@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Auto Loan Generator</title>
+        <meta name="description" content="Auto Loan Generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1 style="margin-right: 50px">Auto Loan Generator</h1>
+        <form onsubmit="calculate();return false">
+            <label for="loanAmount">Loan Amount</label>
+            <input type="number" name="loanAmount" id="loanAmount" value="10000" min="1000" max="100000" step="1000">
+            <br>
+            <label for="loanTerm">Loan Term</label>
+            <input type="number" name="loanTerm" id="loanTerm" value="36" min="12" max="72" step="12">
+            <br>
+            <label for="interestRate">Interest Rate</label>
+            <input type="number" name="interestRate" id="interestRate" value="5" min="0" max="20" step="0.25">
+            <br>
+            <input type="submit" value="Calculate">
+        </form>
+        <div id="loandat" style="margin-left: 50px" hidden>
+        <p>Loan Amount: </p><p id="calcAmnt">10000</p>
+        <p>Loan Term: </p><p id="calcTerm">54</p>
+        <p>Interest Rate: </p><p id="calcRate">25%</p>
+        <p>Monthly Payment: </p><p id="monthly">500</p>
+        </div>
+    </body>
+</html>

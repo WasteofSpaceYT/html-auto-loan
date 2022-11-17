@@ -1,0 +1,18 @@
+html {
+    color-scheme: dark;
+}
+input {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 1em;
+}
+/* align body to center of page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    flex-wrap: wrap
+}
